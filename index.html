@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .head {
+      padding: 20px 40px;
+      border: 1px;
+    }
+
+    .con {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .d1 .li {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .li {
+      padding-right: 100px;
+    }
+
+    .d2 {
+      padding-right: 70px;
+    }
+
+    .d3 {
+      padding: 30px;
+      padding-left: 100px;
+    }
+
+    .d4 {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .d4 img {
+      max-width: 300px;
+      height: auto;
+    }
+
+    .d5 {
+      padding: auto;
+      text-align: left;
+    }
+
+    .sec {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 20px;
+      background-color:tan;
+    }
+
+    .sec1 {
+      padding: 50px;
+    }
+
+    .sec1 h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      border: 2px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      height: 200px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #444;
+      flex-grow: 1;
+    }
+
+    .card1 {
+      text-align: center;
+    }
+    
+    .about {
+      text-align: center;
+    }
+
+    .sec1h2 {
+      text-align: center;
+    }
+    .contact{
+      text-align: center;
+      
+    }
+.ca{
+  text-align: center;
+  padding: 60px 20px;
+  background-color: gainsboro;
+}
+.ca {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.ca .contact i {
+  font-size: 40px;
+  margin: 0 15px;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+.li {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.li a:hover {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+  <header class="head">
+    <div class="con">
+      <h1>Jaivant</h1>
+      <div class="d1">
+        <ul class="li">
+          <li><a href="#">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contactme">Contact Me</a></li>
+        </ul>
+      </div>
+      <div class="d2">
+      <a href="#"><button type="button">Let's Talk</button></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="sec">
+    <div class="d3">
+      <h1>Jaivant</h1>
+      <div class="d5">
+        <p>Let's discuss about the project. In detail the project you can view in the project field.</p>
+       <a href="#project"><button type="button">Project</button></a>
+      </div>
+    </div>
+    <div class="d4">
+      <img src="Screenshot 2024-03-10 215758.png">
+    </div>
+  </div>
+
+  <div class="sec1" id="skills">
+    <h2>Skills</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Languages</h3>
+        <p>Java, C, JavaScript, HTML, CSS, Servlet</p>
+      </div>
+      <div class="card">
+        <h3>Tools & Platforms</h3>
+        <p>MySQL, Visual Studio Code, Eclipse</p>
+      </div>
+      <div class="card">
+        <h3>Soft Skills</h3>
+        <p>Excellent Communication, Teamwork, Adaptability</p>
+      </div>
+    </div>
+  </div>
+  <div class="card1" id="about">
+    <h1>About Me</h1>
+
+    <p>B.E Computer Science & Engineering student at Karpagam College of Engineering.<br> Passionate about Java, Web Development & IoT.</p>
+  </div>
+  <br><br>
+  <div class="sec1" id="project">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Library Management System</h3>
+        <p>CRUD operations, Servlets, MySQL DB, Apache Tomcat, HTML frontend.</p>
+        <a href="#"><button type="button">Know More</button></a>
+      </div>
+      <div class="card">
+        <h3>Smart Agriculture System</h3>
+        <p>IoT-based irrigation, Arduino, DC motors, real-time monitoring, power automation.</p>
+        <a href="#"><button type="button">Know More</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="ca">
+   <div class="contact" id="contactme">
+    <h2>Contact Me</h2>
+    <a href="#" title="Facebook"><i class="fab fa-facebook-square" ></i></a>
+      <a href="#" title="Twitter"><i class="fab fa-twitter-square" ></i></a>
+      <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+   </div>
+   </div>
+</body>
+</html>
